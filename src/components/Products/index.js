@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../data.js";
+import Product from "../Product/index.js";
 
 function Products() {
   console.log(data);
@@ -10,8 +11,8 @@ function Products() {
       <div className={"css.productsContainer"}>
         {
           /* Map through data here */
-          data.map((shoe, index) => {
-            return <div>shoe + {index}</div>;
+          data.map((shoe) => {
+            return <Product shoe={shoe}></Product>;
           })
         }
       </div>

@@ -22,7 +22,12 @@ function CardDetails({ shoe }) {
             <div className={css.price}>£{shoe.price}</div>
           )}
         </div>
-        <a className={css.link} href={shoe.url}>
+        <a
+          className={css.link}
+          href={shoe.url}
+          target="_blank"
+          rel="noreferrer"
+        >
           Go to page
         </a>
         <div className={css.moreTitle}>{shoe.title}</div>

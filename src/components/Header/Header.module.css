@@ -1,0 +1,12 @@
+.logoContainer {
+  padding: 1em 0em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+.logo {
+  background-color: red;
+}

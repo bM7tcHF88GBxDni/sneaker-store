@@ -35,3 +35,5 @@ Data example:
 
 
 Additional Features
+React Spring animations
+React Testing Library

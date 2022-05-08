@@ -1,30 +1,29 @@
-24 items in total
-
+Animation. Library Research:
 https://reactresources.com/topics/react-spring
 https://www.youtube.com/watch?v=TqV2azxwcf8&list=PLLnpHn493BHGrM7tAQL8qVtqwqzbuuE5_&index=6
 https://blog.logrocket.com/animations-with-react-spring/
 https://testingreact.katifrantz.com/
 
+Typography. Research:
 https://www.saasdesign.io/figma-fonts/
 
-Mobile First Design
-Display 2 items per row
-No hover interaction on mobile so 
-When the user hovers on an item, an overlay should be displayed on top of the item. The overlay should contain all the product
-information included in the JSON file.
-When the user clicks on an item, it should open the product page based on the provided url in a new tab.
+Mobile. First Design
+Display 2 items per row, 24 items in total
+No hover interaction on mobile, when a user clicks the item
+    An overlay should be displayed on top of the item. The overlay should contain all the product information included in the JSON file.
+    On mobile, the overlay has a link/button to the full product page
+    When the user clicks on the rest of the item, the overlay recedes back to show the original item view
 
-Desktop
-Display 4 items per row
-When the user hovers on an item, an overlay should be displayed on top of the item. The overlay should contain all the product
-information included in the JSON file.
+Desktop. Design
+Display 4 items per row, 24 items in total
+When the user hovers on an item, an overlay should be displayed on top of the item. The overlay should contain all the product information included in the JSON file.
 When the user clicks on an item, it should open the product page based on the provided url in a new tab.
 
 Data example:
 [
     {
         title: "Nike Air Max 98",
-        image: "https://cdn.thesolesupplier.co.uk/2017/05/AIR-MAX-98-2.jpg", //non CMS URLs are broken
+        image: "https://cdn.thesolesupplier.co.uk/2017/05/AIR-MAX-98-2.jpg", //non CMS CDN domain URLs are broken
         url: "https://thesolesupplier.co.uk/release-dates/nike/air-max-98/", //dedicated page for product, open in new tab
         price: 90,
         discountPrice: 70, //not all items have this
@@ -33,7 +32,22 @@ Data example:
     },
 
 
+Header. Component Plan
+Simple, stateless component
+    Logo svg in public folder
+    Add relative positioning using Flexbox
 
-Additional Features
-React Spring animations
-React Testing Library
+Products. Component Plan
+Import data here
+.map() through data and render list of Product components
+    Pass relevant data as props to Product
+Style using Flexbox
+
+Product. Component Plan
+Receive shoe data through props
+    Render singular component
+Style using Flexbox
+
+Additional. Features:
+- React Spring animations
+- React Testing Library

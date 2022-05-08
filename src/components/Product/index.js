@@ -1,3 +1,4 @@
+import CardDetails from "../CardDetails";
 import css from "./Product.module.css";
 
 function Product({ shoe }) {
@@ -21,7 +22,7 @@ function Product({ shoe }) {
           height: "inherit",
         }}
       >
-        <div className={css.title}>{shoe.title}</div>
+        <CardDetails shoe={shoe}></CardDetails>
       </div>
     </div>
   );

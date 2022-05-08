@@ -1,8 +1,15 @@
+.card {
+  width: inherit;
+  height: inherit;
+}
+
 .price {
 }
 .sale {
 }
 .discount {
+}
+.link {
 }
 .title {
 }

@@ -4,11 +4,20 @@ import css from "./CardDetails.module.css";
 function CardDetails({ shoe }) {
   const [details, setDetails] = useState(false);
 
+  function toggleDetails() {
+    setDetails(!details);
+  }
+
   if (details) {
+    return (
+      <div className={css.card} onClick={toggleDetails}>
+        <div className={css.title}>{shoe.title}</div>
+      </div>
+    );
   }
 
   return (
-    <>
+    <div className={css.card} onClick={toggleDetails}>
       <div>{shoe.brand}</div>
       {shoe.discountPrice ? (
         <>
@@ -18,8 +27,11 @@ function CardDetails({ shoe }) {
       ) : (
         <div className={css.price}>£{shoe.price}</div>
       )}
+      <a className={css.link} href={shoe.url}>
+        Go to page
+      </a>
       <div className={css.moreTitle}>{shoe.title}</div>
-    </>
+    </div>
   );
 }
 

@@ -5,13 +5,10 @@
     align-items: center;
     justify-content: center;
 
-    width: 20vw;
+    width: 22vw;
     height: 25vh;
 
     margin: 0.5em 0em;
-    padding: 1em;
-
-    background-color: aqua;
   }
 }
 
@@ -22,12 +19,9 @@
     align-items: center;
     justify-content: center;
 
-    width: 80vw;
-    height: 20vh;
+    width: 95vw;
+    height: 25vh;
 
     margin: 0.5em 0em;
-    padding: 1em;
-
-    background-color: aqua;
   }
 }

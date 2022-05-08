@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.815);
 }
 
 .brandPriceContainer {
@@ -33,13 +33,13 @@
 .brandName {
   font-weight: 600;
   font-size: 1em;
+  text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.8);
 }
 
 .price {
   font-weight: 600;
   font-size: 1em;
-
-  text-shadow: 0px 2px 8px rgba(77, 77, 77, 0.8);
+  text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.8);
 }
 
 .sale {
@@ -47,16 +47,16 @@
 
   font-weight: 600;
   font-size: 1em;
-
   text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.8);
 }
 
 .discount {
   text-decoration: line-through;
-  color: rgb(150, 150, 150);
+  color: rgb(0, 0, 0);
 
   font-weight: 600;
   font-size: 1em;
+  text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.8);
 }
 
 .link {

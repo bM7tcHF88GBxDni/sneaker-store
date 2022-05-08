@@ -21,10 +21,6 @@ function Product({ shoe }) {
           height: "inherit",
         }}
       >
-        <a href={shoe.url} target="_blank">
-          Go to page
-        </a>
-
         <div className={css.title}>{shoe.title}</div>
       </div>
     </div>

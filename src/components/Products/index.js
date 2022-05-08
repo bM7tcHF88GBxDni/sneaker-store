@@ -5,12 +5,13 @@ import css from "./Products.module.css";
 function Products() {
   return (
     <>
-      {/* placeholder string class */}
       <div className={css.productsContainer}>
         {
-          /* Map through data here */
-          data.map((shoe) => {
-            return <Product key={Math.random() * 1000} shoe={shoe}></Product>;
+          /* Map through sneakers data here */
+          data.map((sneakers) => {
+            return (
+              <Product key={Math.random() * 1000} sneakers={sneakers}></Product>
+            );
           })
         }
       </div>

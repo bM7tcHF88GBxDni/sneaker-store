@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import css from "./CardDetails.module.css";
 
-function CardDetails({ shoe }) {
+function CardDetails({ sneakers }) {
   const [details, setDetails] = useState(false);
 
   function toggleDetails() {
@@ -16,6 +16,7 @@ function CardDetails({ shoe }) {
     setDetails(false);
   }
 
+  //Show full product details
   if (details) {
     return (
       <div
@@ -24,36 +25,39 @@ function CardDetails({ shoe }) {
         onMouseLeave={toggleOff}
       >
         <div className={css.brandPriceContainer}>
-          <div className={css.brandName}>{shoe.brand}</div>
-          {shoe.discountPrice ? (
+          <div className={css.brandName}>{sneakers.brand}</div>
+          {/* Conditionally render RRP, or RRP and discounted price */}
+          {sneakers.discountPrice ? (
             <div>
-              <div className={css.discount}>£{shoe.price}</div>
-              <div className={css.sale}>£{shoe.discountPrice}</div>
+              <div className={css.discount}>£{sneakers.price}</div>
+              <div className={css.sale}>£{sneakers.discountPrice}</div>
             </div>
           ) : (
-            <div className={css.price}>£{shoe.price}</div>
+            <div className={css.price}>£{sneakers.price}</div>
           )}
         </div>
         <a
           className={css.link}
-          href={shoe.url}
+          href={sneakers.url}
           target="_blank"
           rel="noreferrer"
         >
           Go to page
         </a>
-        <div className={css.moreTitle}>{shoe.title}</div>
+        {/* Product name */}
+        <div className={css.moreTitle}>{sneakers.title}</div>
       </div>
     );
   }
 
+  //Show fewer details
   return (
     <div
       className={css.lessDetails}
       onMouseEnter={toggleOn}
       onClick={toggleDetails}
     >
-      <div className={css.lessTitle}>{shoe.title}</div>
+      <div className={css.lessTitle}>{sneakers.title}</div>
     </div>
   );
 }

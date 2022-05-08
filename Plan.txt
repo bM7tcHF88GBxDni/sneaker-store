@@ -46,14 +46,11 @@ Style using Flexbox
 Product. Component Plan
 Receive shoe data through props
     Render singular shoe
-    Need a placeholder image for broken image URLs
-        Check if image exists by fetching the image URL, if response is not 200 then its failed, render a placeholder
+    Fix incorrect image URLs
     If a discount exists, render RRP differently
     When viewing more details, add a semi transparent background to make details easier to read
+    Implement onMouseEnter/onMouseLeave event for Desktop view, instead of onClick
 Style using Flexbox
-
-ToDo-
-- Implement onMouseEnter/onMouseLeave event for Desktop view, instead of onClick
 
 Additional. Features:
 - React Spring animations

@@ -1,0 +1,37 @@
+24 items in total
+
+https://reactresources.com/topics/react-spring
+https://www.youtube.com/watch?v=TqV2azxwcf8&list=PLLnpHn493BHGrM7tAQL8qVtqwqzbuuE5_&index=6
+https://blog.logrocket.com/animations-with-react-spring/
+https://testingreact.katifrantz.com/
+
+https://www.saasdesign.io/figma-fonts/
+
+Mobile First Design
+Display 2 items per row
+No hover interaction on mobile so 
+When the user hovers on an item, an overlay should be displayed on top of the item. The overlay should contain all the product
+information included in the JSON file.
+When the user clicks on an item, it should open the product page based on the provided url in a new tab.
+
+Desktop
+Display 4 items per row
+When the user hovers on an item, an overlay should be displayed on top of the item. The overlay should contain all the product
+information included in the JSON file.
+When the user clicks on an item, it should open the product page based on the provided url in a new tab.
+
+Data example:
+[
+    {
+        title: "Nike Air Max 98",
+        image: "https://cdn.thesolesupplier.co.uk/2017/05/AIR-MAX-98-2.jpg", //non CMS URLs are broken
+        url: "https://thesolesupplier.co.uk/release-dates/nike/air-max-98/", //dedicated page for product, open in new tab
+        price: 90,
+        discountPrice: 70, //not all items have this
+        currency: "GBP",
+        brand: "Nike"
+    },
+
+
+
+Additional Features

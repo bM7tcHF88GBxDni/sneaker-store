@@ -49,6 +49,7 @@ Receive shoe data through props
     Need a placeholder image for broken image URLs
         Check if image exists by fetching the image URL, if response is not 200 then its failed, render a placeholder
     If a discount exists, render RRP differently
+    When viewing more details, add a semi transparent background to make details easier to read
 Style using Flexbox
 
 Additional. Features:

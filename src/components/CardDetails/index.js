@@ -8,9 +8,21 @@ function CardDetails({ shoe }) {
     setDetails(!details);
   }
 
+  function toggleOn() {
+    setDetails(true);
+  }
+
+  function toggleOff() {
+    setDetails(false);
+  }
+
   if (details) {
     return (
-      <div className={css.moreDetails} onClick={toggleDetails}>
+      <div
+        className={css.moreDetails}
+        onClick={toggleDetails}
+        onMouseLeave={toggleOff}
+      >
         <div className={css.brandPriceContainer}>
           <div className={css.brandName}>{shoe.brand}</div>
           {shoe.discountPrice ? (
@@ -36,7 +48,11 @@ function CardDetails({ shoe }) {
   }
 
   return (
-    <div className={css.lessDetails} onClick={toggleDetails}>
+    <div
+      className={css.lessDetails}
+      onMouseEnter={toggleOn}
+      onClick={toggleDetails}
+    >
       <div className={css.lessTitle}>{shoe.title}</div>
     </div>
   );

@@ -52,6 +52,9 @@ Receive shoe data through props
     When viewing more details, add a semi transparent background to make details easier to read
 Style using Flexbox
 
+ToDo-
+- Implement onMouseEnter/onMouseLeave event for Desktop view, instead of onClick
+
 Additional. Features:
 - React Spring animations
 - React Testing Library

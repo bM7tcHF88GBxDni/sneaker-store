@@ -45,8 +45,10 @@ Style using Flexbox
 
 Product. Component Plan
 Receive shoe data through props
-    Render singular component
+    Render singular shoe
     Need a placeholder image for broken image URLs
+        Check if image exists by fetching the image URL, if response is not 200 then its failed, render a placeholder
+    If a discount exists, render RRP differently
 Style using Flexbox
 
 Additional. Features:

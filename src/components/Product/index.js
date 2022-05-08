@@ -1,19 +1,20 @@
-import React, { useState } from "react";
-
 import CardDetails from "../CardDetails";
 import css from "./Product.module.css";
 
 function Product({ shoe }) {
-  const [details, setDetails] = useState(false);
-
-  function toggleDetails() {
-    setDetails(!details);
-  }
+  /*         
+    title: "Nike Air Max 98",
+    image:
+    url:
+    price: 90,
+    discountPrice: 70
+    currency: "GBP"
+    brand: "Nike"
+*/
 
   return (
     <div className={css.productContainer}>
       <div
-        onClick={toggleDetails}
         style={{
           backgroundImage: `url(${shoe.image || shoe.imageone})`,
           backgroundSize: "cover",
@@ -21,7 +22,7 @@ function Product({ shoe }) {
           height: "inherit",
         }}
       >
-        <CardDetails shoe={shoe} viewDetails={details}></CardDetails>
+        <CardDetails shoe={shoe}></CardDetails>
       </div>
     </div>
   );

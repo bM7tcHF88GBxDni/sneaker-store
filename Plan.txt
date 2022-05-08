@@ -46,6 +46,7 @@ Style using Flexbox
 Product. Component Plan
 Receive shoe data through props
     Render singular component
+    Need a placeholder image for broken image URLs
 Style using Flexbox
 
 Additional. Features:

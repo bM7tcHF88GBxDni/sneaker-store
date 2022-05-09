@@ -9,3 +9,7 @@ Made with the latest version of [Create React App](https://github.com/facebook/c
   - `npm install`
   - `npm start`
   - View site in your browser at [http://localhost:3000](http://localhost:3000).
+
+### Additional Dependencies:
+
+https://react-spring.io/

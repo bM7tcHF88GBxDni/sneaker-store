@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useSpring, animated, config } from "@react-spring/web";
 
 import css from "./CardDetails.module.css";
 

@@ -1,10 +1,17 @@
+import { useSpring, animated } from "@react-spring/web";
+
 import data from "../../data.js";
 import Product from "../Product/index.js";
 import css from "./Products.module.css";
 
 function Products() {
+  const fadeIn = useSpring({
+    from: { opacity: 0 },
+    to: [{ opacity: 1 }, { opacity: 0.8 }, { opacity: 1 }],
+  });
+
   return (
-    <>
+    <animated.div style={fadeIn}>
       <div className={css.productsContainer}>
         {
           /* Map through sneakers data here */
@@ -15,7 +22,7 @@ function Products() {
           })
         }
       </div>
-    </>
+    </animated.div>
   );
 }
 

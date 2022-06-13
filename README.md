@@ -1,6 +1,9 @@
 Live Demo: https://sneak-sneak.netlify.app/
 
 # Sneaker Store
+
+![](https://github.com/bM7tcHF88GBxDni/README-GIF-Storage/blob/main/sneaker-store/sneaker%20store%20demo%203.gif)
+
 - Creating an eCommerce site focused on selling the latest sneakers, initial spec:
 ```c#
 Your solution should reflect the mockups supplied.

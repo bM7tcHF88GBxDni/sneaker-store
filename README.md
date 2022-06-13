@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Sneaker Store
 
 Made with the latest version of [Create React App](https://github.com/facebook/create-react-app).
 
